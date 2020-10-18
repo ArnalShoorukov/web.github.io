@@ -103,9 +103,14 @@ class BottomBar extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        InfoText(
-                          type: 'Email',
-                          text: 'explore@gmail.com',
+                        InkWell(
+                          onTap: (){
+                            print('Open Email');
+                          },
+                          child: InfoText(
+                            type: 'Email',
+                            text: 'explore@gmail.com',
+                          ),
                         ),
                         SizedBox(height: 5),
                         InfoText(

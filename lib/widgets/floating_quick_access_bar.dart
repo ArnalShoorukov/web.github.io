@@ -14,14 +14,24 @@ class FloatingQuickAccessBar extends StatefulWidget {
 }
 
 class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
-  List _isHovering = [false, false, false, false];
+  List _isHovering = [false, false, false, false, false, false];
   List<Widget> rowElements = [];
-
-  List<String> items = ['Destination', 'Dates', 'People', 'Experience'];
+  final String imagePath = 'assets/images/';
+  final List<String> images = [
+    'assets/images/asia.jpg',
+    'assets/images/africa.jpg',
+    'assets/images/europe.jpg',
+    'assets/images/south_america.jpg',
+    'assets/images/australia.jpg',
+    'assets/images/antarctica.jpg',
+  ];
+  List<String> items = ['Home', 'About', 'Services', 'Transformer', 'Gallery', 'Contact'];
   List<IconData> icons = [
     Icons.location_on,
     Icons.date_range,
     Icons.people,
+    Icons.wb_sunny,
+    Icons.wb_sunny,
     Icons.wb_sunny
   ];
 

@@ -48,8 +48,7 @@ class _HomePageState extends State<HomePage> {
       extendBodyBehindAppBar: true,
       appBar: ResponsiveWidget.isSmallScreen(context)
           ? AppBar(
-              backgroundColor:
-                  Theme.of(context).bottomAppBarColor.withOpacity(_opacity),
+              backgroundColor: Theme.of(context).bottomAppBarColor.withOpacity(_opacity),
               elevation: 0,
               centerTitle: true,
               actions: [
@@ -75,6 +74,9 @@ class _HomePageState extends State<HomePage> {
                   fontWeight: FontWeight.w400,
                   letterSpacing: 3,
                 ),
+              ),
+              leading: Image.asset(
+                'assets/images/trekking.jpg',
               ),
             )
           : PreferredSize(
